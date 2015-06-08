@@ -1,5 +1,5 @@
 //
-//  ObjRootViewController.h
+//  ObjTabBarViewController.h
 //  tenMile
 //
 //  Created by changxicao on 15/6/8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ObjRootViewController : UIViewController
+@interface ObjTabBarViewController :UIViewController
 
 @end

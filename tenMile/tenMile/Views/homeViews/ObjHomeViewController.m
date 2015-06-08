@@ -1,22 +1,26 @@
 //
-//  ObjRootViewController.m
+//  ObjHomeViewController.m
 //  tenMile
 //
 //  Created by changxicao on 15/6/8.
 //  Copyright (c) 2015年 changxicao. All rights reserved.
 //
 
-#import "ObjRootViewController.h"
+#import "ObjHomeViewController.h"
 
-@interface ObjRootViewController ()
+@interface ObjHomeViewController ()
 
 @end
 
-@implementation ObjRootViewController
+@implementation ObjHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

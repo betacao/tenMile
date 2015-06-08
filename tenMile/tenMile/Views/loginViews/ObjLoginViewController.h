@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 changxicao. All rights reserved.
 //
 
-#import "ObjRootViewController.h"
+#import "ObjViewController.h"
 
-@interface ObjLoginViewController : ObjRootViewController
+@interface ObjLoginViewController : ObjViewController
 
 @end

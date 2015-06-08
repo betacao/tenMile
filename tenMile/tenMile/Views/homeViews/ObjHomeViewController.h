@@ -1,5 +1,5 @@
 //
-//  ObjRestPasswordViewController.h
+//  ObjHomeViewController.h
 //  tenMile
 //
 //  Created by changxicao on 15/6/8.
@@ -8,6 +8,6 @@
 
 #import "ObjViewController.h"
 
-@interface ObjRestPasswordViewController : ObjViewController
+@interface ObjHomeViewController : ObjViewController
 
 @end

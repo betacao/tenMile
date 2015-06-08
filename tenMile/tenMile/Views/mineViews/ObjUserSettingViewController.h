@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 changxicao. All rights reserved.
 //
 
-#import "ObjRootViewController.h"
+#import "ObjViewController.h"
 
-@interface ObjUserSettingViewController : ObjRootViewController
+@interface ObjUserSettingViewController : ObjViewController
 
 @end
