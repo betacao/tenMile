@@ -1,0 +1,27 @@
+//
+//  tenMile.pch
+//  tenMile
+//
+//  Created by changxicao on 15/6/8.
+//  Copyright (c) 2015年 changxicao. All rights reserved.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+//AFNetworking库需要添加引用到此
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import "MKNetworkKit.h"
+    #import "MBProgressHUD.h"
+    #import "Constants.h"
+    #import "YHLogger.h"
+    #import "YHAssistant.h"
+    typedef void(^YHENetworkFailedBlock)(NSError *error);
+
+    #define  NEW_UPLOAD
+
+
+    #define USE_AFNETWORKING
+
+#endif
