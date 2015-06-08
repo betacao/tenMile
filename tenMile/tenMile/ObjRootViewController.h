@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ObjRootViewController.h
 //  tenMile
 //
 //  Created by changxicao on 15/6/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ObjRootViewController : UIViewController
 
 @end
-

@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		F92232DC1B25456A00653DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92232DB1B25456A00653DB0 /* main.m */; };
 		F92232DF1B25456A00653DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92232DE1B25456A00653DB0 /* AppDelegate.m */; };
-		F92232E21B25456A00653DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92232E11B25456A00653DB0 /* ViewController.m */; };
-		F92232E51B25456A00653DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92232E31B25456A00653DB0 /* Main.storyboard */; };
 		F92232E71B25456A00653DB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92232E61B25456A00653DB0 /* Images.xcassets */; };
-		F92232EA1B25456A00653DB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92232E81B25456A00653DB0 /* LaunchScreen.xib */; };
 		F92232F61B25456A00653DB0 /* tenMileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F92232F51B25456A00653DB0 /* tenMileTests.m */; };
+		F97F0D8B1B25C56D005F3A62 /* ObjRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D8A1B25C56D005F3A62 /* ObjRootViewController.m */; };
+		F97F0D8F1B25C5B6005F3A62 /* ObjLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D8D1B25C5B6005F3A62 /* ObjLoginViewController.m */; };
+		F97F0D901B25C5B6005F3A62 /* ObjLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D8E1B25C5B6005F3A62 /* ObjLoginViewController.xib */; };
+		F97F0D941B25C5F3005F3A62 /* ObjRestPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D921B25C5F3005F3A62 /* ObjRestPasswordViewController.m */; };
+		F97F0D951B25C5F3005F3A62 /* ObjRestPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D931B25C5F3005F3A62 /* ObjRestPasswordViewController.xib */; };
+		F97F0D991B25C621005F3A62 /* ObjForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D971B25C621005F3A62 /* ObjForgetPasswordViewController.m */; };
+		F97F0D9A1B25C621005F3A62 /* ObjForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D981B25C621005F3A62 /* ObjForgetPasswordViewController.xib */; };
+		F97F0D9E1B25C66B005F3A62 /* ObjRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D9C1B25C66B005F3A62 /* ObjRegisterViewController.m */; };
+		F97F0D9F1B25C66B005F3A62 /* ObjRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D9D1B25C66B005F3A62 /* ObjRegisterViewController.xib */; };
+		F97F0DA41B25C6FE005F3A62 /* ObjUserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DA21B25C6FE005F3A62 /* ObjUserSettingViewController.m */; };
+		F97F0DA51B25C6FE005F3A62 /* ObjUserSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0DA31B25C6FE005F3A62 /* ObjUserSettingViewController.xib */; };
 		F99DF2C81B2568D500DB1B75 /* YHENetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DF2C51B2568D500DB1B75 /* YHENetworkAdapter.m */; };
 		F99DF2C91B2568D500DB1B75 /* YHENetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DF2C71B2568D500DB1B75 /* YHENetworkEngine.m */; };
 		F99DF3331B25696500DB1B75 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DF30A1B25696500DB1B75 /* AFHTTPRequestOperation.m */; };
@@ -73,14 +81,27 @@
 		F92232DB1B25456A00653DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F92232DD1B25456A00653DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F92232DE1B25456A00653DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F92232E01B25456A00653DB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F92232E11B25456A00653DB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F92232E41B25456A00653DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92232E61B25456A00653DB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F92232E91B25456A00653DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F92232EF1B25456A00653DB0 /* tenMileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tenMileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92232F41B25456A00653DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92232F51B25456A00653DB0 /* tenMileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tenMileTests.m; sourceTree = "<group>"; };
+		F97F0D891B25C56D005F3A62 /* ObjRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjRootViewController.h; sourceTree = "<group>"; };
+		F97F0D8A1B25C56D005F3A62 /* ObjRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjRootViewController.m; sourceTree = "<group>"; };
+		F97F0D8C1B25C5B6005F3A62 /* ObjLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoginViewController.h; sourceTree = "<group>"; };
+		F97F0D8D1B25C5B6005F3A62 /* ObjLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjLoginViewController.m; sourceTree = "<group>"; };
+		F97F0D8E1B25C5B6005F3A62 /* ObjLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjLoginViewController.xib; sourceTree = "<group>"; };
+		F97F0D911B25C5F3005F3A62 /* ObjRestPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjRestPasswordViewController.h; sourceTree = "<group>"; };
+		F97F0D921B25C5F3005F3A62 /* ObjRestPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjRestPasswordViewController.m; sourceTree = "<group>"; };
+		F97F0D931B25C5F3005F3A62 /* ObjRestPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjRestPasswordViewController.xib; sourceTree = "<group>"; };
+		F97F0D961B25C621005F3A62 /* ObjForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjForgetPasswordViewController.h; sourceTree = "<group>"; };
+		F97F0D971B25C621005F3A62 /* ObjForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjForgetPasswordViewController.m; sourceTree = "<group>"; };
+		F97F0D981B25C621005F3A62 /* ObjForgetPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		F97F0D9B1B25C66B005F3A62 /* ObjRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjRegisterViewController.h; sourceTree = "<group>"; };
+		F97F0D9C1B25C66B005F3A62 /* ObjRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjRegisterViewController.m; sourceTree = "<group>"; };
+		F97F0D9D1B25C66B005F3A62 /* ObjRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjRegisterViewController.xib; sourceTree = "<group>"; };
+		F97F0DA11B25C6FE005F3A62 /* ObjUserSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjUserSettingViewController.h; sourceTree = "<group>"; };
+		F97F0DA21B25C6FE005F3A62 /* ObjUserSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjUserSettingViewController.m; sourceTree = "<group>"; };
+		F97F0DA31B25C6FE005F3A62 /* ObjUserSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjUserSettingViewController.xib; sourceTree = "<group>"; };
 		F99DF2C41B2568D500DB1B75 /* YHENetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHENetworkAdapter.h; sourceTree = "<group>"; };
 		F99DF2C51B2568D500DB1B75 /* YHENetworkAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHENetworkAdapter.m; sourceTree = "<group>"; };
 		F99DF2C61B2568D500DB1B75 /* YHENetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHENetworkEngine.h; sourceTree = "<group>"; };
@@ -212,13 +233,12 @@
 		F92232D81B25456A00653DB0 /* tenMile */ = {
 			isa = PBXGroup;
 			children = (
+				F97F0D871B25C50A005F3A62 /* Views */,
 				F92232DD1B25456A00653DB0 /* AppDelegate.h */,
 				F92232DE1B25456A00653DB0 /* AppDelegate.m */,
-				F92232E01B25456A00653DB0 /* ViewController.h */,
-				F92232E11B25456A00653DB0 /* ViewController.m */,
-				F92232E31B25456A00653DB0 /* Main.storyboard */,
+				F97F0D891B25C56D005F3A62 /* ObjRootViewController.h */,
+				F97F0D8A1B25C56D005F3A62 /* ObjRootViewController.m */,
 				F92232E61B25456A00653DB0 /* Images.xcassets */,
-				F92232E81B25456A00653DB0 /* LaunchScreen.xib */,
 				F99DF38F1B259C4800DB1B75 /* pinyin */,
 				F99DF3811B2597A200DB1B75 /* NSLogger */,
 				F99DF37A1B257F0300DB1B75 /* Login */,
@@ -259,6 +279,44 @@
 				F92232F41B25456A00653DB0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F97F0D871B25C50A005F3A62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F97F0DA01B25C6D6005F3A62 /* mineViews */,
+				F97F0D881B25C50A005F3A62 /* loginViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F97F0D881B25C50A005F3A62 /* loginViews */ = {
+			isa = PBXGroup;
+			children = (
+				F97F0D8C1B25C5B6005F3A62 /* ObjLoginViewController.h */,
+				F97F0D8D1B25C5B6005F3A62 /* ObjLoginViewController.m */,
+				F97F0D8E1B25C5B6005F3A62 /* ObjLoginViewController.xib */,
+				F97F0D961B25C621005F3A62 /* ObjForgetPasswordViewController.h */,
+				F97F0D971B25C621005F3A62 /* ObjForgetPasswordViewController.m */,
+				F97F0D981B25C621005F3A62 /* ObjForgetPasswordViewController.xib */,
+				F97F0D911B25C5F3005F3A62 /* ObjRestPasswordViewController.h */,
+				F97F0D921B25C5F3005F3A62 /* ObjRestPasswordViewController.m */,
+				F97F0D931B25C5F3005F3A62 /* ObjRestPasswordViewController.xib */,
+				F97F0D9B1B25C66B005F3A62 /* ObjRegisterViewController.h */,
+				F97F0D9C1B25C66B005F3A62 /* ObjRegisterViewController.m */,
+				F97F0D9D1B25C66B005F3A62 /* ObjRegisterViewController.xib */,
+			);
+			path = loginViews;
+			sourceTree = "<group>";
+		};
+		F97F0DA01B25C6D6005F3A62 /* mineViews */ = {
+			isa = PBXGroup;
+			children = (
+				F97F0DA11B25C6FE005F3A62 /* ObjUserSettingViewController.h */,
+				F97F0DA21B25C6FE005F3A62 /* ObjUserSettingViewController.m */,
+				F97F0DA31B25C6FE005F3A62 /* ObjUserSettingViewController.xib */,
+			);
+			path = mineViews;
 			sourceTree = "<group>";
 		};
 		F99DF2C31B2568D500DB1B75 /* Networking */ = {
@@ -510,8 +568,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92232E51B25456A00653DB0 /* Main.storyboard in Resources */,
-				F92232EA1B25456A00653DB0 /* LaunchScreen.xib in Resources */,
+				F97F0D9A1B25C621005F3A62 /* ObjForgetPasswordViewController.xib in Resources */,
+				F97F0D9F1B25C66B005F3A62 /* ObjRegisterViewController.xib in Resources */,
+				F97F0DA51B25C6FE005F3A62 /* ObjUserSettingViewController.xib in Resources */,
+				F97F0D951B25C5F3005F3A62 /* ObjRestPasswordViewController.xib in Resources */,
+				F97F0D901B25C5B6005F3A62 /* ObjLoginViewController.xib in Resources */,
 				F92232E71B25456A00653DB0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97F0D991B25C621005F3A62 /* ObjForgetPasswordViewController.m in Sources */,
 				F99DF3381B25696500DB1B75 /* AFURLConnectionOperation.m in Sources */,
 				F99DF3761B2575CB00DB1B75 /* MKNetworkEngine.m in Sources */,
 				F99DF3331B25696500DB1B75 /* AFHTTPRequestOperation.m in Sources */,
@@ -538,11 +600,13 @@
 				F99DF3721B2575CB00DB1B75 /* NSDictionary+RequestEncoding.m in Sources */,
 				F99DF3771B2575CB00DB1B75 /* MKNetworkOperation.m in Sources */,
 				F99DF3361B25696500DB1B75 /* AFNetworkReachabilityManager.m in Sources */,
+				F97F0DA41B25C6FE005F3A62 /* ObjUserSettingViewController.m in Sources */,
+				F97F0D8F1B25C5B6005F3A62 /* ObjLoginViewController.m in Sources */,
+				F97F0D941B25C5F3005F3A62 /* ObjRestPasswordViewController.m in Sources */,
 				F99DF3921B259C4800DB1B75 /* pinyin.m in Sources */,
 				F99DF3411B25696500DB1B75 /* UIProgressView+AFNetworking.m in Sources */,
 				F99DF33B1B25696500DB1B75 /* AFURLSessionManager.m in Sources */,
 				F99DF3391B25696500DB1B75 /* AFURLRequestSerialization.m in Sources */,
-				F92232E21B25456A00653DB0 /* ViewController.m in Sources */,
 				F99DF3421B25696500DB1B75 /* UIRefreshControl+AFNetworking.m in Sources */,
 				F99DF33A1B25696500DB1B75 /* AFURLResponseSerialization.m in Sources */,
 				F99DF3701B2575CB00DB1B75 /* NSData+MKBase64.m in Sources */,
@@ -555,12 +619,14 @@
 				F99DF3451B25696500DB1B75 /* YHEProgressHUD.m in Sources */,
 				F99DF3341B25696500DB1B75 /* AFHTTPRequestOperationManager.m in Sources */,
 				F99DF3371B25696500DB1B75 /* AFSecurityPolicy.m in Sources */,
+				F97F0D9E1B25C66B005F3A62 /* ObjRegisterViewController.m in Sources */,
 				F99DF3851B2597A200DB1B75 /* LoggerClient.m in Sources */,
 				F99DF38B1B25997000DB1B75 /* YHENetworkOperation.m in Sources */,
 				F99DF3781B2575CB00DB1B75 /* Reachability.m in Sources */,
 				F99DF38A1B25997000DB1B75 /* YHEMKNetworkEngine.m in Sources */,
 				F99DF34D1B256A6E00DB1B75 /* OpenUDID.m in Sources */,
 				F99DF3431B25696500DB1B75 /* UIWebView+AFNetworking.m in Sources */,
+				F97F0D8B1B25C56D005F3A62 /* ObjRootViewController.m in Sources */,
 				F92232DC1B25456A00653DB0 /* main.m in Sources */,
 				F99DF3801B25969000DB1B75 /* YHLogger.m in Sources */,
 				F99DF37D1B257F2A00DB1B75 /* ObjLoginUser.m in Sources */,
@@ -592,25 +658,6 @@
 			targetProxy = F92232F01B25456A00653DB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F92232E31B25456A00653DB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F92232E41B25456A00653DB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F92232E81B25456A00653DB0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F92232E91B25456A00653DB0 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F92232F71B25456A00653DB0 /* Debug */ = {
