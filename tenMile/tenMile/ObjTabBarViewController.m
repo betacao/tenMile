@@ -31,7 +31,6 @@
 {
     [super viewDidAppear:animated];
     self.view.backgroundColor = [UIColor whiteColor];
-    NSLog(@"%@",[NSValue valueWithCGRect:self.view.frame]);
 }
 
 - (void)didReceiveMemoryWarning {
