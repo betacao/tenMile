@@ -18,6 +18,10 @@
     [super viewDidLoad];
     [self.navigationBar setBackgroundImage:[UIImage patternImageWithColor: [UIColor colorWithHexString:@"29A1CB"]] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.translucent = YES;
+    
+    UIColor * color = [UIColor whiteColor];
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+    self.navigationBar.titleTextAttributes = dict;
 }
 
 - (void)didReceiveMemoryWarning {

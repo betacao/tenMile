@@ -1,37 +1,22 @@
 //
-//  ObjHomeViewController.m
+//  ObjMyOrderViewController.m
 //  tenMile
 //
-//  Created by changxicao on 15/6/8.
+//  Created by changxicao on 15/6/10.
 //  Copyright (c) 2015年 changxicao. All rights reserved.
 //
 
-#import "ObjHomeViewController.h"
+#import "ObjMyOrderViewController.h"
 
-@interface ObjHomeViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *testButton;
+@interface ObjMyOrderViewController ()
 
 @end
 
-@implementation ObjHomeViewController
-
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if(self){
-        
-    }
-    return self;
-}
+@implementation ObjMyOrderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"首页";
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    
+    self.title = @"我的订单";
 }
 
 - (void)didReceiveMemoryWarning {
