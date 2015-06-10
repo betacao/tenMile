@@ -25,6 +25,9 @@
                         <tabBarItem title="购物车" image="购物车--常态" id="bS6-y1-9nB"/>
                         <tabBarItem title="个人信息" image="个人中心-常态" id="KZK-aI-bCo"/>
                     </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="k3d-Q6-6ag"/>
+                    </connections>
                 </tabBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

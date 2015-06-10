@@ -10,10 +10,10 @@
 #import "ObjHomeViewController.h"
 #import "ObjNavigationViewController.h"
 
-@interface ObjTabBarViewController ()
+@interface ObjTabBarViewController ()<UITabBarDelegate>
 
-@property (strong, nonatomic) ObjHomeViewController *homeViewController;
-@property (weak, nonatomic) IBOutlet UITabBar *tabBarView;
+@property (strong, nonatomic)   ObjHomeViewController *homeViewController;
+@property (weak, nonatomic)     IBOutlet UITabBar *tabBarView;
 
 
 @end
@@ -37,6 +37,38 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark ------selectItem
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    NSInteger index = [tabBar.items indexOfObject:item];
+    switch (index) {
+        case 0:
+        {
+            //首页
+        }
+            break;
+        case 1:
+        {
+            //选购
+        }
+            break;
+        case 2:
+        {
+            //购物车
+        }
+            break;
+        case 3:
+        {
+            //个人信息
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
