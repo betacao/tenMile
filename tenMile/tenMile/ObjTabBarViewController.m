@@ -13,6 +13,7 @@
 @interface ObjTabBarViewController ()
 
 @property (strong, nonatomic) ObjHomeViewController *homeViewController;
+@property (weak, nonatomic) IBOutlet UITabBar *tabBarView;
 
 
 @end
@@ -21,10 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.homeViewController = [[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil];
-//    ObjNavigationViewController *nav = [[ObjNavigationViewController alloc] initWithRootViewController:self.homeViewController];
-//    [self addChildViewController:nav];
-//    [self.view addSubview:nav.view];
+    self.homeViewController = [[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil];
+    ObjNavigationViewController *nav = [[ObjNavigationViewController alloc] initWithRootViewController:self.homeViewController];
+    [self addChildViewController:nav];
+    [self.view insertSubview:nav.view belowSubview:self.tabBarView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
