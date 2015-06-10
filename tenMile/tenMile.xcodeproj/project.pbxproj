@@ -21,6 +21,10 @@
 		F931071B1B26E39F006CB718 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F931070E1B26E39F006CB718 /* NSArray+MASAdditions.m */; };
 		F931071C1B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F93107111B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		F931071D1B26E39F006CB718 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F93107131B26E39F006CB718 /* View+MASAdditions.m */; };
+		F96B812E1B286C5900920E5E /* ObjStoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B812C1B286C5900920E5E /* ObjStoresViewController.m */; };
+		F96B812F1B286C5900920E5E /* ObjStoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */; };
+		F96B81331B286C6B00920E5E /* ObjCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B81311B286C6B00920E5E /* ObjCartViewController.m */; };
+		F96B81341B286C6B00920E5E /* ObjCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B81321B286C6B00920E5E /* ObjCartViewController.xib */; };
 		F97F0D8B1B25C56D005F3A62 /* ObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D8A1B25C56D005F3A62 /* ObjViewController.m */; };
 		F97F0D8F1B25C5B6005F3A62 /* ObjLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D8D1B25C5B6005F3A62 /* ObjLoginViewController.m */; };
 		F97F0D901B25C5B6005F3A62 /* ObjLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D8E1B25C5B6005F3A62 /* ObjLoginViewController.xib */; };
@@ -124,6 +128,12 @@
 		F93107121B26E39F006CB718 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		F93107131B26E39F006CB718 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		F93107141B26E39F006CB718 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F96B812B1B286C5900920E5E /* ObjStoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjStoresViewController.h; sourceTree = "<group>"; };
+		F96B812C1B286C5900920E5E /* ObjStoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjStoresViewController.m; sourceTree = "<group>"; };
+		F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjStoresViewController.xib; sourceTree = "<group>"; };
+		F96B81301B286C6B00920E5E /* ObjCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCartViewController.h; sourceTree = "<group>"; };
+		F96B81311B286C6B00920E5E /* ObjCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCartViewController.m; sourceTree = "<group>"; };
+		F96B81321B286C6B00920E5E /* ObjCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjCartViewController.xib; sourceTree = "<group>"; };
 		F97F0D891B25C56D005F3A62 /* ObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjViewController.h; sourceTree = "<group>"; };
 		F97F0D8A1B25C56D005F3A62 /* ObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjViewController.m; sourceTree = "<group>"; };
 		F97F0D8C1B25C5B6005F3A62 /* ObjLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoginViewController.h; sourceTree = "<group>"; };
@@ -366,9 +376,31 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		F96B81291B286C3700920E5E /* shoppingCartViews */ = {
+			isa = PBXGroup;
+			children = (
+				F96B81301B286C6B00920E5E /* ObjCartViewController.h */,
+				F96B81311B286C6B00920E5E /* ObjCartViewController.m */,
+				F96B81321B286C6B00920E5E /* ObjCartViewController.xib */,
+			);
+			path = shoppingCartViews;
+			sourceTree = "<group>";
+		};
+		F96B812A1B286C3700920E5E /* storeViews */ = {
+			isa = PBXGroup;
+			children = (
+				F96B812B1B286C5900920E5E /* ObjStoresViewController.h */,
+				F96B812C1B286C5900920E5E /* ObjStoresViewController.m */,
+				F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */,
+			);
+			path = storeViews;
+			sourceTree = "<group>";
+		};
 		F97F0D871B25C50A005F3A62 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F96B81291B286C3700920E5E /* shoppingCartViews */,
+				F96B812A1B286C3700920E5E /* storeViews */,
 				F97F0DAB1B25CF1F005F3A62 /* homeViews */,
 				F97F0DA01B25C6D6005F3A62 /* mineViews */,
 				F97F0D881B25C50A005F3A62 /* loginViews */,
@@ -666,7 +698,9 @@
 			files = (
 				F97F0D9A1B25C621005F3A62 /* ObjForgetPasswordViewController.xib in Resources */,
 				F97F0DAA1B25CBD9005F3A62 /* ObjTabBarViewController.xib in Resources */,
+				F96B81341B286C6B00920E5E /* ObjCartViewController.xib in Resources */,
 				F97F0D9F1B25C66B005F3A62 /* ObjRegisterViewController.xib in Resources */,
+				F96B812F1B286C5900920E5E /* ObjStoresViewController.xib in Resources */,
 				F97F0DA51B25C6FE005F3A62 /* ObjUserSettingViewController.xib in Resources */,
 				F97F0D951B25C5F3005F3A62 /* ObjRestPasswordViewController.xib in Resources */,
 				F97F0DB01B25CF34005F3A62 /* ObjHomeViewController.xib in Resources */,
@@ -695,6 +729,8 @@
 				F931071C1B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F99DF3331B25696500DB1B75 /* AFHTTPRequestOperation.m in Sources */,
 				F99DF3441B25696500DB1B75 /* MBProgressHUD.m in Sources */,
+				F96B812E1B286C5900920E5E /* ObjStoresViewController.m in Sources */,
+				F96B81331B286C6B00920E5E /* ObjCartViewController.m in Sources */,
 				F99DF33F1B25696500DB1B75 /* UIButton+AFNetworking.m in Sources */,
 				F99DF3721B2575CB00DB1B75 /* NSDictionary+RequestEncoding.m in Sources */,
 				F99DF3771B2575CB00DB1B75 /* MKNetworkOperation.m in Sources */,
