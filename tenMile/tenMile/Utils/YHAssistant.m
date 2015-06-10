@@ -1255,21 +1255,21 @@ BOOL yoho_option_contains_bit(NSUInteger option, NSUInteger bit)
 
 - (void)showWait
 {
-//    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self];
-//    hud.yOffset = -80.0f;
-//    //    hud.removeFromSuperViewOnHide = YES;
-//    hud.tag = kTagWaitView;
-//    hud.mode = MBProgressHUDModeIndeterminate;
-//    [self addSubview:hud];
-//    [self bringSubviewToFront:hud];
-//    [hud show:YES];
-    YHEProgressHUD *hud = (YHEProgressHUD *)[self viewWithTag:kTagWaitView];
-    if(!hud) {
-        hud = [[YHEProgressHUD alloc] initWithFrame:self.bounds];
-    }
-    [hud setTag: kTagWaitView];
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self];
+    hud.yOffset = -80.0f;
+    //    hud.removeFromSuperViewOnHide = YES;
+    hud.tag = kTagWaitView;
+    hud.mode = MBProgressHUDModeIndeterminate;
     [self addSubview:hud];
     [self bringSubviewToFront:hud];
+    [hud show:YES];
+//    YHEProgressHUD *hud = (YHEProgressHUD *)[self viewWithTag:kTagWaitView];
+//    if(!hud) {
+//        hud = [[YHEProgressHUD alloc] initWithFrame:self.bounds];
+//    }
+//    [hud setTag: kTagWaitView];
+//    [self addSubview:hud];
+//    [self bringSubviewToFront:hud];
 }
 
 

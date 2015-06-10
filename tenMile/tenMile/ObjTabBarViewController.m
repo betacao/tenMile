@@ -21,10 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.homeViewController = [[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil];
-    ObjNavigationViewController *nav = [[ObjNavigationViewController alloc] initWithRootViewController:self.homeViewController];
-    [self addChildViewController:nav];
-    [self.view addSubview:nav.view];
+//    self.homeViewController = [[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil];
+//    ObjNavigationViewController *nav = [[ObjNavigationViewController alloc] initWithRootViewController:self.homeViewController];
+//    [self addChildViewController:nav];
+//    [self.view addSubview:nav.view];
 }
 
 - (void)viewDidAppear:(BOOL)animated

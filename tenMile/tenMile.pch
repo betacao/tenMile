@@ -17,8 +17,9 @@
     #import "Constants.h"
     #import "YHLogger.h"
     #import "YHAssistant.h"
+    #import <WebImage/WebImage.h>
+    #import "Masonry.h"
     typedef void(^YHENetworkFailedBlock)(NSError *error);
-
     #define  NEW_UPLOAD
 
 
