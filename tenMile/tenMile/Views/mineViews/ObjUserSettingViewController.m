@@ -9,6 +9,10 @@
 #import "ObjUserSettingViewController.h"
 #import "ObjUserSettingTableViewCell.h"
 #import "ObjMyOrderViewController.h"
+#import "ObjStoreCollectionViewController.h"
+#import "ObjMyPublishViewController.h"
+#import "ObjMyDiscountViewController.h"
+#import "ObjMyStoreViewController.h"
 
 @interface ObjUserSettingViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic)     IBOutlet UIButton *orderButton;
@@ -40,6 +44,20 @@
     
     self.headerView.layer.masksToBounds = YES;
     self.headerView.layer.cornerRadius = CGRectGetHeight(self.headerView.frame) / 2.0f;
+}
+
+- (IBAction)didClickButton:(UIButton *)sender
+{
+    if(sender.tag == 100) {
+        ObjMyOrderViewController *controller = [[ObjMyOrderViewController alloc] initWithNibName:@"ObjMyOrderViewController" bundle:nil];
+        [self.navigationController pushViewController:controller animated:YES];
+    } else if(sender.tag == 101) {
+        ObjMyStoreViewController *controller = [[ObjMyStoreViewController alloc] initWithNibName:@"ObjMyStoreViewController" bundle:nil];
+        [self.navigationController pushViewController:controller animated:YES];
+    } else {
+        ObjMyPublishViewController *controller = [[ObjMyPublishViewController alloc] initWithNibName:@"ObjMyPublishViewController" bundle:nil];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -75,7 +93,35 @@
             [self.navigationController pushViewController:controller animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            ObjMyStoreViewController *controller = [[ObjMyStoreViewController alloc] initWithNibName:@"ObjMyStoreViewController" bundle:nil];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        case 2:
+        {
+            ObjMyPublishViewController *controller = [[ObjMyPublishViewController alloc] initWithNibName:@"ObjMyPublishViewController" bundle:nil];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        case 3:
+        {
+            ObjMyDiscountViewController *controller = [[ObjMyDiscountViewController alloc] initWithNibName:@"ObjMyDiscountViewController" bundle:nil];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        case 4:
+        {
+            ObjStoreCollectionViewController *controller = [[ObjStoreCollectionViewController alloc] initWithNibName:@"ObjStoreCollectionViewController" bundle:nil];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        case 5:
+        {
+            //打电话
+        }
+            break;
         default:
             break;
     }
