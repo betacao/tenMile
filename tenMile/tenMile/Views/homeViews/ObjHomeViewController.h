@@ -10,4 +10,6 @@
 
 @interface ObjHomeViewController : ObjViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @end
