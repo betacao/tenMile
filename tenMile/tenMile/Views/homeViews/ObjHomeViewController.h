@@ -11,5 +11,6 @@
 @interface ObjHomeViewController : ObjViewController
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UILabel *ruleLab;
 
 @end
