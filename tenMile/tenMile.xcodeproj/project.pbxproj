@@ -29,6 +29,8 @@
 		F931071B1B26E39F006CB718 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F931070E1B26E39F006CB718 /* NSArray+MASAdditions.m */; };
 		F931071C1B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F93107111B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		F931071D1B26E39F006CB718 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F93107131B26E39F006CB718 /* View+MASAdditions.m */; };
+		F95A751A1B31A4AB00E9A11D /* ObjCategoryViews.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A75191B31A4AB00E9A11D /* ObjCategoryViews.m */; };
+		F95A751C1B31B2E900E9A11D /* ObjCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95A751B1B31B2E900E9A11D /* ObjCategoryView.xib */; };
 		F96B812E1B286C5900920E5E /* ObjStoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B812C1B286C5900920E5E /* ObjStoresViewController.m */; };
 		F96B812F1B286C5900920E5E /* ObjStoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */; };
 		F96B81331B286C6B00920E5E /* ObjCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B81311B286C6B00920E5E /* ObjCartViewController.m */; };
@@ -152,6 +154,9 @@
 		F93107121B26E39F006CB718 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		F93107131B26E39F006CB718 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		F93107141B26E39F006CB718 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F95A75181B31A4AB00E9A11D /* ObjCategoryViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCategoryViews.h; sourceTree = "<group>"; };
+		F95A75191B31A4AB00E9A11D /* ObjCategoryViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCategoryViews.m; sourceTree = "<group>"; };
+		F95A751B1B31B2E900E9A11D /* ObjCategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjCategoryView.xib; sourceTree = "<group>"; };
 		F96B812B1B286C5900920E5E /* ObjStoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjStoresViewController.h; sourceTree = "<group>"; };
 		F96B812C1B286C5900920E5E /* ObjStoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjStoresViewController.m; sourceTree = "<group>"; };
 		F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjStoresViewController.xib; sourceTree = "<group>"; };
@@ -406,6 +411,16 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		F95A75171B31A47D00E9A11D /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				F95A75181B31A4AB00E9A11D /* ObjCategoryViews.h */,
+				F95A75191B31A4AB00E9A11D /* ObjCategoryViews.m */,
+				F95A751B1B31B2E900E9A11D /* ObjCategoryView.xib */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
 		F96B81291B286C3700920E5E /* shoppingCartViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +444,7 @@
 		F97F0D871B25C50A005F3A62 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F95A75171B31A47D00E9A11D /* customViews */,
 				F96B81291B286C3700920E5E /* shoppingCartViews */,
 				F96B812A1B286C3700920E5E /* storeViews */,
 				F97F0DAB1B25CF1F005F3A62 /* homeViews */,
@@ -747,6 +763,7 @@
 				F9269D061B29B913002D2036 /* ObjMyPublishViewController.xib in Resources */,
 				F97F0D9A1B25C621005F3A62 /* ObjForgetPasswordViewController.xib in Resources */,
 				F96B813E1B28806100920E5E /* ObjMyOrderViewController.xib in Resources */,
+				F95A751C1B31B2E900E9A11D /* ObjCategoryView.xib in Resources */,
 				F97F0DAA1B25CBD9005F3A62 /* ObjTabBarViewController.xib in Resources */,
 				F96B81341B286C6B00920E5E /* ObjCartViewController.xib in Resources */,
 				F96B81391B28790F00920E5E /* ObjUserSettingTableViewCell.xib in Resources */,
@@ -839,6 +856,7 @@
 				F99DF2C81B2568D500DB1B75 /* YHENetworkAdapter.m in Sources */,
 				F99DF3351B25696500DB1B75 /* AFHTTPSessionManager.m in Sources */,
 				F99DF3741B2575CB00DB1B75 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				F95A751A1B31A4AB00E9A11D /* ObjCategoryViews.m in Sources */,
 				F9269D0F1B29B980002D2036 /* ObjMyStoreViewController.m in Sources */,
 				F99DF33D1B25696500DB1B75 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F99DF38E1B2599E800DB1B75 /* YHAssistant.m in Sources */,

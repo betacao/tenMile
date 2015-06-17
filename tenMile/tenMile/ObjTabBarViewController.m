@@ -84,6 +84,13 @@
         case 1:
         {
             //选购
+            ObjNavigationViewController *fromController = [self.viewControllers objectAtIndex:self.currentIndex];
+            ObjNavigationViewController *toController = [self.viewControllers objectAtIndex:index];
+            [fromController.view removeFromSuperview];
+            [fromController removeFromParentViewController];
+            
+            [self addChildViewController:toController];
+            [self.view insertSubview:toController.view belowSubview:self.tabBarView];
         }
             break;
         case 2:
