@@ -55,8 +55,6 @@
 		F97F0D9F1B25C66B005F3A62 /* ObjRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D9D1B25C66B005F3A62 /* ObjRegisterViewController.xib */; };
 		F97F0DA41B25C6FE005F3A62 /* ObjUserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DA21B25C6FE005F3A62 /* ObjUserSettingViewController.m */; };
 		F97F0DA51B25C6FE005F3A62 /* ObjUserSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0DA31B25C6FE005F3A62 /* ObjUserSettingViewController.xib */; };
-		F97F0DA91B25CBD9005F3A62 /* ObjTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DA71B25CBD9005F3A62 /* ObjTabBarViewController.m */; };
-		F97F0DAA1B25CBD9005F3A62 /* ObjTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0DA81B25CBD9005F3A62 /* ObjTabBarViewController.xib */; };
 		F97F0DAF1B25CF34005F3A62 /* ObjHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DAD1B25CF34005F3A62 /* ObjHomeViewController.m */; };
 		F97F0DB01B25CF34005F3A62 /* ObjHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0DAE1B25CF34005F3A62 /* ObjHomeViewController.xib */; };
 		F97F0DB41B25DD78005F3A62 /* ObjNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DB31B25DD78005F3A62 /* ObjNavigationViewController.m */; };
@@ -199,9 +197,6 @@
 		F97F0DA11B25C6FE005F3A62 /* ObjUserSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjUserSettingViewController.h; sourceTree = "<group>"; };
 		F97F0DA21B25C6FE005F3A62 /* ObjUserSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjUserSettingViewController.m; sourceTree = "<group>"; };
 		F97F0DA31B25C6FE005F3A62 /* ObjUserSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjUserSettingViewController.xib; sourceTree = "<group>"; };
-		F97F0DA61B25CBD9005F3A62 /* ObjTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjTabBarViewController.h; sourceTree = "<group>"; };
-		F97F0DA71B25CBD9005F3A62 /* ObjTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjTabBarViewController.m; sourceTree = "<group>"; };
-		F97F0DA81B25CBD9005F3A62 /* ObjTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjTabBarViewController.xib; sourceTree = "<group>"; };
 		F97F0DAC1B25CF34005F3A62 /* ObjHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjHomeViewController.h; sourceTree = "<group>"; };
 		F97F0DAD1B25CF34005F3A62 /* ObjHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjHomeViewController.m; sourceTree = "<group>"; };
 		F97F0DAE1B25CF34005F3A62 /* ObjHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjHomeViewController.xib; sourceTree = "<group>"; };
@@ -345,9 +340,6 @@
 				F92232DE1B25456A00653DB0 /* AppDelegate.m */,
 				F97F0D891B25C56D005F3A62 /* ObjViewController.h */,
 				F97F0D8A1B25C56D005F3A62 /* ObjViewController.m */,
-				F97F0DA61B25CBD9005F3A62 /* ObjTabBarViewController.h */,
-				F97F0DA71B25CBD9005F3A62 /* ObjTabBarViewController.m */,
-				F97F0DA81B25CBD9005F3A62 /* ObjTabBarViewController.xib */,
 				F97F0DB21B25DD78005F3A62 /* ObjNavigationViewController.h */,
 				F97F0DB31B25DD78005F3A62 /* ObjNavigationViewController.m */,
 				F96B59D81B3EE185000EA4AE /* ObjTabbarController.h */,
@@ -784,7 +776,6 @@
 				F9269D061B29B913002D2036 /* ObjMyPublishViewController.xib in Resources */,
 				F97F0D9A1B25C621005F3A62 /* ObjForgetPasswordViewController.xib in Resources */,
 				F96B813E1B28806100920E5E /* ObjMyOrderViewController.xib in Resources */,
-				F97F0DAA1B25CBD9005F3A62 /* ObjTabBarViewController.xib in Resources */,
 				F96B81341B286C6B00920E5E /* ObjCartViewController.xib in Resources */,
 				F96B81391B28790F00920E5E /* ObjUserSettingTableViewCell.xib in Resources */,
 				F9269D011B29B7BF002D2036 /* ObjStoreCollectionViewController.xib in Resources */,
@@ -853,7 +844,6 @@
 				F99DF33E1B25696500DB1B75 /* UIAlertView+AFNetworking.m in Sources */,
 				F99DF3731B2575CB00DB1B75 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				F99DF3451B25696500DB1B75 /* YHEProgressHUD.m in Sources */,
-				F97F0DA91B25CBD9005F3A62 /* ObjTabBarViewController.m in Sources */,
 				F99DF3341B25696500DB1B75 /* AFHTTPRequestOperationManager.m in Sources */,
 				F99DF3371B25696500DB1B75 /* AFSecurityPolicy.m in Sources */,
 				F97F0D9E1B25C66B005F3A62 /* ObjRegisterViewController.m in Sources */,

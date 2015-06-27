@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     NSArray *controllerArray = self.navigationController.viewControllers;
     if([controllerArray indexOfObject:self] != 0){
         UIButton *button = [UIButton buttonWithImageName:@"返回" highlightedImageName:@"返回" title:nil target:self action:@selector(popViewController)];

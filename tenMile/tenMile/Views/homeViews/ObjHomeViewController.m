@@ -9,7 +9,7 @@
 #import "ObjHomeViewController.h"
 #import "ObjUserSettingViewController.h"
 #import "ObjTabbarController.h"
-
+#import "ObjNavigationViewController.h"
 
 @interface ObjHomeViewController ()<UISearchBarDelegate>
 @end
@@ -80,8 +80,11 @@
 
 - (void)gotoUserCenter{
     ObjTabbarController *controller = [[ObjTabbarController alloc] initWithNibName:@"ObjTabbarController" bundle:nil];
-    controller.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:controller animated:YES];
+    ObjViewController *rootController = [[ObjViewController alloc] init];
+    [rootController addChildViewController:controller];
+    [rootController.view addSubview:controller.view];
+//    controller.hidesBottomBarWhenPushed = YES;
+    [self presentViewController:rootController animated:YES completion:nil];
 }
 - (void)changeCity{
     

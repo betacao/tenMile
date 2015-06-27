@@ -18,9 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    UIButton *button = [UIButton buttonWithImageName:@"返回" highlightedImageName:@"返回" title:nil target:self action:@selector(popViewController)];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
     [self initStaticViews];
 }
+
+- (void)popViewController
+{
+    [self dismissModalViewControllerWithAnimation];
+}
+
 - (void)initStaticViews
 {
 
@@ -68,7 +77,7 @@
     recomendView.frame = frame;
     [self.storeScrollView addSubview:recomendView];
     
-//    self.storeScrollView.contentSize = CGSizeMake(kScreenWidth, 1.1f * CGRectGetMaxY(recomendView.frame));
+    self.storeScrollView.contentSize = CGSizeMake(kScreenWidth, ceilf(1.1f * CGRectGetMaxY(recomendView.frame)));
     
 }
 

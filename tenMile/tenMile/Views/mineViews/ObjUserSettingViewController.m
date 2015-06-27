@@ -40,6 +40,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *button = [UIButton buttonWithImageName:@"返回" highlightedImageName:@"返回" title:nil target:self action:@selector(popViewController)];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
     self.title = @"个人信息";
     self.titleArray = @[@"我的订单",@"我的店铺",@"我的发布",@"我的优惠",@"店铺收藏",@"客服电话"];
     
@@ -47,9 +52,9 @@
     self.headerView.layer.cornerRadius = CGRectGetHeight(self.headerView.frame) / 2.0f;
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)popViewController
 {
-    [super viewDidAppear:animated];
+    [self dismissModalViewControllerWithAnimation];
 }
 
 - (IBAction)didClickButton:(UIButton *)sender

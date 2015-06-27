@@ -13,7 +13,7 @@
 #import "ObjStoresViewController.h"
 #import "ObjCartViewController.h"
 
-@interface ObjTabbarController ()
+@interface ObjTabbarController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -21,53 +21,66 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIButton *button = [UIButton buttonWithImageName:@"返回" highlightedImageName:@"返回" title:nil target:self action:@selector(popViewController)];
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.leftBarButtonItem = leftItem;
-    
+
     //商城
     ObjStoresViewController *storesViewController = [[ObjStoresViewController alloc] initWithNibName:@"ObjStoresViewController" bundle:nil];
+    ObjNavigationViewController *nav1 = [[ObjNavigationViewController alloc] initWithRootViewController:storesViewController];
+    nav1.delegate = self;
     
     //购物车
     ObjCartViewController *cartViewController = [[ObjCartViewController alloc] initWithNibName:@"ObjCartViewController" bundle:nil];
+    ObjNavigationViewController *nav2 = [[ObjNavigationViewController alloc] initWithRootViewController:cartViewController];
+    nav2.delegate = self;
     
     //个人中心
     ObjUserSettingViewController *settingViewController = [[ObjUserSettingViewController alloc] initWithNibName:@"ObjUserSettingViewController" bundle:nil];
+    ObjNavigationViewController *nav3 = [[ObjNavigationViewController alloc] initWithRootViewController:settingViewController];
+    nav3.delegate = self;
     
-    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"选购" image:[UIImage imageNamed:@"选购--常态"] selectedImage:[UIImage imageNamed:@"选购--常态"]];
+    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"选购" image:[UIImage imageNamed:@"选购--常态"] selectedImage:[UIImage imageNamed:@"选购--常态"]];
     
-    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"购物车" image:[UIImage imageNamed:@"购物车--常态"] selectedImage:[UIImage imageNamed:@"购物车--常态"]];
+    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"购物车" image:[UIImage imageNamed:@"购物车--常态"] selectedImage:[UIImage imageNamed:@"购物车--常态"]];
     
-    UITabBarItem *item4 = [[UITabBarItem alloc] initWithTitle:@"个人信息" image:[UIImage imageNamed:@"个人中心-常态"] selectedImage:[UIImage imageNamed:@"个人中心-常态"]];
+    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"个人信息" image:[UIImage imageNamed:@"个人中心-常态"] selectedImage:[UIImage imageNamed:@"个人中心-常态"]];
     
 
-    storesViewController.tabBarItem = item2;
-    cartViewController.tabBarItem = item3;
-    settingViewController.tabBarItem = item4;
+    storesViewController.tabBarItem = item1;
+    cartViewController.tabBarItem = item2;
+    settingViewController.tabBarItem = item3;
     
-    [self setViewControllers:@[storesViewController,cartViewController,settingViewController] animated:NO];
-    self.selectedViewController = settingViewController;
-    
+    [self setViewControllers:@[nav1,nav2,nav3] animated:NO];
+
 }
 
-
-- (void)popViewController
+- (UIStatusBarStyle)preferredStatusBarStyle
 {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
     NSInteger index = [tabBar.items indexOfObject:item];
     if(index == 0){
+        
     }
+}
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    NSTimeInterval animationDuration = (viewController == [navigationController.viewControllers firstObject])?0.26:0.25;
+    CGRect frame = self.tabBar.frame;
+    frame.origin.x = (viewController == [navigationController.viewControllers firstObject])?0.0f:(self.tabBar.frame.size.width * -1.0f);
+    [UIView animateWithDuration:animationDuration delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.tabBar.frame = frame;
+        [self.view bringSubviewToFront:self.tabBar];
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {
