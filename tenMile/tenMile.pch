@@ -19,6 +19,7 @@
     #import "YHAssistant.h"
     #import <WebImage/WebImage.h>
     #import "Masonry.h"
+    #import "ObjSegmentView.h"
     typedef void(^YHENetworkFailedBlock)(NSError *error);
     #define  NEW_UPLOAD
 

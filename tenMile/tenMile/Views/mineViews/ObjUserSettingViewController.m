@@ -13,6 +13,7 @@
 #import "ObjMyPublishViewController.h"
 #import "ObjMyDiscountViewController.h"
 #import "ObjMyStoreViewController.h"
+#import "ObjLoginViewController.h"
 
 @interface ObjUserSettingViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic)     IBOutlet UIButton *orderButton;
@@ -46,6 +47,11 @@
     self.headerView.layer.cornerRadius = CGRectGetHeight(self.headerView.frame) / 2.0f;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
 - (IBAction)didClickButton:(UIButton *)sender
 {
     if(sender.tag == 100) {
@@ -58,6 +64,12 @@
         ObjMyPublishViewController *controller = [[ObjMyPublishViewController alloc] initWithNibName:@"ObjMyPublishViewController" bundle:nil];
         [self.navigationController pushViewController:controller animated:YES];
     }
+}
+
+- (IBAction)loginClick:(id)sender
+{
+    ObjLoginViewController *controller = [[ObjLoginViewController alloc] initWithNibName:@"ObjLoginViewController" bundle:nil];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -126,11 +138,6 @@
             break;
     }
     
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,7 @@
 //
 
 #import "ObjStoresViewController.h"
-#import "ObjCategoryViews.h"
+#import "ObjDiningOutViewController.h"
 
 @interface ObjStoresViewController ()<UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *storeScrollView;
@@ -45,34 +45,69 @@
     
     //分类按钮
     
-    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"ObjCategoryView" owner:self options:nil];
-    UIView *categoryView = [nib objectAtIndex:0];
-    CGRect frame = CGRectZero;
-//    frame.origin.y += (kNavigationBarHeight + kStatusBarMaxY);
-//    categoryView.frame = frame;
+    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"ObjStoresViewController" owner:self options:nil];
+    UIView *categoryView = [nib objectAtIndex:1];
+    CGRect frame = categoryView.frame;
+    frame.origin.y += 10.0f;
+    categoryView.frame = frame;
     [self.storeScrollView addSubview:categoryView];
     
     //限时抢购
-    UIView *limitedView = [nib objectAtIndex:1];
+    UIView *limitedView = [nib objectAtIndex:2];
     frame = limitedView.frame;
     frame.origin.y += (CGRectGetMaxY(categoryView.frame) + 8.0f);
     limitedView.frame = frame;
     [self.storeScrollView addSubview:limitedView];
     
     //名店推荐
-    UIView *recomendView = [nib objectAtIndex:2];
+    UIView *recomendView = [nib objectAtIndex:3];
     frame = recomendView.frame;
     frame.origin.y += (CGRectGetMaxY(limitedView.frame) + 8.0f);
     recomendView.frame = frame;
     [self.storeScrollView addSubview:recomendView];
     
-    self.storeScrollView.contentSize = CGSizeMake(kScreenWidth, 2*CGRectGetMaxY(recomendView.frame));
+    self.storeScrollView.contentSize = CGSizeMake(kScreenWidth, 1.1f * CGRectGetMaxY(recomendView.frame));
     
 }
 
 - (void)gotoMyOrder:(UIButton *)button
 {
     
+}
+
+//超市零食
+- (IBAction)superMarket:(UIButton *)sender {
+}
+
+//餐饮外卖
+- (IBAction)diningOut:(UIButton *)sender {
+    ObjDiningOutViewController *controller = [[ObjDiningOutViewController alloc] initWithNibName:@"ObjDiningOutViewController" bundle:nil];
+    if(controller){
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+}
+
+//衣物护洗
+- (IBAction)washingCloth:(UIButton *)sender {
+}
+
+//学习用品
+- (IBAction)studyTools:(UIButton *)sender {
+}
+
+- (IBAction)training:(UIButton *)sender {
+}
+
+//旅游素拓
+- (IBAction)tourism:(UIButton *)sender {
+}
+
+//摄影印刷
+- (IBAction)photoShot:(UIButton *)sender {
+}
+
+//其他服务
+- (IBAction)otherService:(UIButton *)sender {
 }
 
 - (void)didReceiveMemoryWarning {

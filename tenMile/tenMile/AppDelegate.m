@@ -19,7 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[ObjTabBarViewController alloc] initWithNibName:@"ObjTabBarViewController" bundle:nil];
+    UIViewController *controller = [[ObjTabBarViewController alloc] initWithNibName:@"ObjTabBarViewController" bundle:nil];
+    controller.hidesBottomBarWhenPushed = YES;
+    self.window.rootViewController = controller;
     
 
     [self.window makeKeyAndVisible];
