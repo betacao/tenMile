@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self initStaticViews];
 }
 - (void)initStaticViews
@@ -48,7 +50,7 @@
     NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"ObjStoresViewController" owner:self options:nil];
     UIView *categoryView = [nib objectAtIndex:1];
     CGRect frame = categoryView.frame;
-    frame.origin.y += 10.0f;
+    frame.origin.y += (kNavigationBarHeight + kStatusBarMaxY + 10.0f);
     categoryView.frame = frame;
     [self.storeScrollView addSubview:categoryView];
     
@@ -66,7 +68,7 @@
     recomendView.frame = frame;
     [self.storeScrollView addSubview:recomendView];
     
-    self.storeScrollView.contentSize = CGSizeMake(kScreenWidth, 1.1f * CGRectGetMaxY(recomendView.frame));
+//    self.storeScrollView.contentSize = CGSizeMake(kScreenWidth, 1.1f * CGRectGetMaxY(recomendView.frame));
     
 }
 

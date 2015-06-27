@@ -20,10 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *controller = [[ObjNavigationViewController alloc] initWithRootViewController:[[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil]];
-    self.window.rootViewController = controller;
+    ObjNavigationViewController *controller = [[ObjNavigationViewController alloc] initWithRootViewController:[[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil]];
     
-
+    ObjViewController *rootController = [[ObjViewController alloc] init];
+    [rootController addChildViewController:controller];
+    [rootController.view addSubview:controller.view];
+    self.window.rootViewController = rootController;
     [self.window makeKeyAndVisible];
     return YES;
 }

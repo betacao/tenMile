@@ -8,6 +8,7 @@
 
 #import "ObjHomeViewController.h"
 #import "ObjUserSettingViewController.h"
+#import "ObjTabbarController.h"
 
 
 @interface ObjHomeViewController ()<UISearchBarDelegate>
@@ -78,7 +79,8 @@
 }
 
 - (void)gotoUserCenter{
-    ObjUserSettingViewController *controller = [[ObjUserSettingViewController alloc] initWithNibName:@"ObjUserSettingViewController" bundle:nil];
+    ObjTabbarController *controller = [[ObjTabbarController alloc] initWithNibName:@"ObjTabbarController" bundle:nil];
+    controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
 }
 - (void)changeCity{
@@ -119,14 +121,5 @@
     [searchBar setShowsCancelButton:NO animated:YES];
     [searchBar resignFirstResponder];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

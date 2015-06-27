@@ -86,27 +86,18 @@
                             <state key="normal" image="椭圆-1">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="training:" destination="-1" eventType="touchUpInside" id="O1t-9U-oTr"/>
-                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK6-IP-2Yx">
                             <rect key="frame" x="175" y="3" width="50" height="50"/>
                             <state key="normal" image="椭圆-1">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="washingCloth:" destination="-1" eventType="touchUpInside" id="DHZ-N9-oHT"/>
-                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-hC-GBi">
                             <rect key="frame" x="15" y="3" width="50" height="50"/>
                             <state key="normal" image="椭圆-1">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="superMarket:" destination="-1" eventType="touchUpInside" id="czf-Tu-KRu"/>
-                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="超市零食" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzu-3M-Qon">
                             <rect key="frame" x="16" y="54" width="49" height="21"/>
