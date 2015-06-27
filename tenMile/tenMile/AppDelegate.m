@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ObjTabBarViewController.h"
+#import "ObjNavigationViewController.h"
+#import "ObjHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *controller = [[ObjTabBarViewController alloc] initWithNibName:@"ObjTabBarViewController" bundle:nil];
-    controller.hidesBottomBarWhenPushed = YES;
+    UIViewController *controller = [[ObjNavigationViewController alloc] initWithRootViewController:[[ObjHomeViewController alloc] initWithNibName:@"ObjHomeViewController" bundle:nil]];
     self.window.rootViewController = controller;
     
 

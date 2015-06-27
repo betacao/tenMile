@@ -7,6 +7,7 @@
 //
 
 #import "ObjHomeViewController.h"
+#import "ObjUserSettingViewController.h"
 
 
 @interface ObjHomeViewController ()<UISearchBarDelegate>
@@ -77,7 +78,8 @@
 }
 
 - (void)gotoUserCenter{
-    
+    ObjUserSettingViewController *controller = [[ObjUserSettingViewController alloc] initWithNibName:@"ObjUserSettingViewController" bundle:nil];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 - (void)changeCity{
     

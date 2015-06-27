@@ -20,7 +20,7 @@
     if([controllerArray indexOfObject:self] != 0){
         UIButton *button = [UIButton buttonWithImageName:@"返回" highlightedImageName:@"返回" title:nil target:self action:@selector(popViewController)];
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-        self.navigationController.navigationItem.leftBarButtonItem = leftItem;
+        self.navigationItem.leftBarButtonItem = leftItem;
     }
 }
 
