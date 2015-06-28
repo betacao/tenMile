@@ -9,6 +9,7 @@
 #import "ObjRegisterViewController.h"
 
 @interface ObjRegisterViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 
 @end
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapHeadImageView:)];
+    [self.headImageView addGestureRecognizer:recognizer];
+}
+
+- (void)didTapHeadImageView:(UIGestureRecognizer *)recognizer
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

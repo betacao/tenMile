@@ -34,8 +34,8 @@
 		F96B598E1B3E4820000EA4AE /* ObjSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B598D1B3E4820000EA4AE /* ObjSegmentView.m */; };
 		F96B59921B3E574A000EA4AE /* ObjDiningOutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B59901B3E574A000EA4AE /* ObjDiningOutTableViewCell.m */; };
 		F96B59931B3E574A000EA4AE /* ObjDiningOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B59911B3E574A000EA4AE /* ObjDiningOutTableViewCell.xib */; };
-		F96B59DB1B3EE185000EA4AE /* ObjTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B59D91B3EE185000EA4AE /* ObjTabbarController.m */; };
-		F96B59DC1B3EE185000EA4AE /* ObjTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B59DA1B3EE185000EA4AE /* ObjTabbarController.xib */; };
+		F96B59DB1B3EE185000EA4AE /* ObjNormalTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B59D91B3EE185000EA4AE /* ObjNormalTabbarController.m */; };
+		F96B59DC1B3EE185000EA4AE /* ObjNormalTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B59DA1B3EE185000EA4AE /* ObjNormalTabbarController.xib */; };
 		F96B812E1B286C5900920E5E /* ObjStoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B812C1B286C5900920E5E /* ObjStoresViewController.m */; };
 		F96B812F1B286C5900920E5E /* ObjStoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */; };
 		F96B81331B286C6B00920E5E /* ObjCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B81311B286C6B00920E5E /* ObjCartViewController.m */; };
@@ -58,6 +58,16 @@
 		F97F0DAF1B25CF34005F3A62 /* ObjHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DAD1B25CF34005F3A62 /* ObjHomeViewController.m */; };
 		F97F0DB01B25CF34005F3A62 /* ObjHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0DAE1B25CF34005F3A62 /* ObjHomeViewController.xib */; };
 		F97F0DB41B25DD78005F3A62 /* ObjNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0DB31B25DD78005F3A62 /* ObjNavigationViewController.m */; };
+		F993F0901B3FE2A0009C3E9A /* ObjStoreTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F993F08E1B3FE2A0009C3E9A /* ObjStoreTabbarController.m */; };
+		F993F0911B3FE2A0009C3E9A /* ObjStoreTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F993F08F1B3FE2A0009C3E9A /* ObjStoreTabbarController.xib */; };
+		F993F0961B3FF222009C3E9A /* ObjTimeShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F993F0941B3FF222009C3E9A /* ObjTimeShoppingViewController.m */; };
+		F993F0971B3FF222009C3E9A /* ObjTimeShoppingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F993F0951B3FF222009C3E9A /* ObjTimeShoppingViewController.xib */; };
+		F993F09B1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F993F0991B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.m */; };
+		F993F09C1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F993F09A1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.xib */; };
+		F993F0A01B3FFAAE009C3E9A /* ObjShopRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F993F09E1B3FFAAE009C3E9A /* ObjShopRecommendViewController.m */; };
+		F993F0A11B3FFAAE009C3E9A /* ObjShopRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F993F09F1B3FFAAE009C3E9A /* ObjShopRecommendViewController.xib */; };
+		F993F0A51B3FFB4F009C3E9A /* ObjShopRecommendViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F993F0A31B3FFB4F009C3E9A /* ObjShopRecommendViewCell.m */; };
+		F993F0A61B3FFB4F009C3E9A /* ObjShopRecommendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F993F0A41B3FFB4F009C3E9A /* ObjShopRecommendViewCell.xib */; };
 		F99DF2C81B2568D500DB1B75 /* YHENetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DF2C51B2568D500DB1B75 /* YHENetworkAdapter.m */; };
 		F99DF2C91B2568D500DB1B75 /* YHENetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DF2C71B2568D500DB1B75 /* YHENetworkEngine.m */; };
 		F99DF3331B25696500DB1B75 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DF30A1B25696500DB1B75 /* AFHTTPRequestOperation.m */; };
@@ -165,9 +175,9 @@
 		F96B598F1B3E574A000EA4AE /* ObjDiningOutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjDiningOutTableViewCell.h; sourceTree = "<group>"; };
 		F96B59901B3E574A000EA4AE /* ObjDiningOutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjDiningOutTableViewCell.m; sourceTree = "<group>"; };
 		F96B59911B3E574A000EA4AE /* ObjDiningOutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjDiningOutTableViewCell.xib; sourceTree = "<group>"; };
-		F96B59D81B3EE185000EA4AE /* ObjTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjTabbarController.h; sourceTree = "<group>"; };
-		F96B59D91B3EE185000EA4AE /* ObjTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjTabbarController.m; sourceTree = "<group>"; };
-		F96B59DA1B3EE185000EA4AE /* ObjTabbarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjTabbarController.xib; sourceTree = "<group>"; };
+		F96B59D81B3EE185000EA4AE /* ObjNormalTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjNormalTabbarController.h; sourceTree = "<group>"; };
+		F96B59D91B3EE185000EA4AE /* ObjNormalTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjNormalTabbarController.m; sourceTree = "<group>"; };
+		F96B59DA1B3EE185000EA4AE /* ObjNormalTabbarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjNormalTabbarController.xib; sourceTree = "<group>"; };
 		F96B812B1B286C5900920E5E /* ObjStoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjStoresViewController.h; sourceTree = "<group>"; };
 		F96B812C1B286C5900920E5E /* ObjStoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjStoresViewController.m; sourceTree = "<group>"; };
 		F96B812D1B286C5900920E5E /* ObjStoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjStoresViewController.xib; sourceTree = "<group>"; };
@@ -202,6 +212,21 @@
 		F97F0DAE1B25CF34005F3A62 /* ObjHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjHomeViewController.xib; sourceTree = "<group>"; };
 		F97F0DB21B25DD78005F3A62 /* ObjNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjNavigationViewController.h; sourceTree = "<group>"; };
 		F97F0DB31B25DD78005F3A62 /* ObjNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjNavigationViewController.m; sourceTree = "<group>"; };
+		F993F08D1B3FE2A0009C3E9A /* ObjStoreTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjStoreTabbarController.h; sourceTree = "<group>"; };
+		F993F08E1B3FE2A0009C3E9A /* ObjStoreTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjStoreTabbarController.m; sourceTree = "<group>"; };
+		F993F08F1B3FE2A0009C3E9A /* ObjStoreTabbarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjStoreTabbarController.xib; sourceTree = "<group>"; };
+		F993F0931B3FF222009C3E9A /* ObjTimeShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjTimeShoppingViewController.h; sourceTree = "<group>"; };
+		F993F0941B3FF222009C3E9A /* ObjTimeShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjTimeShoppingViewController.m; sourceTree = "<group>"; };
+		F993F0951B3FF222009C3E9A /* ObjTimeShoppingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjTimeShoppingViewController.xib; sourceTree = "<group>"; };
+		F993F0981B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjTimeShoppingTableViewCell.h; sourceTree = "<group>"; };
+		F993F0991B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjTimeShoppingTableViewCell.m; sourceTree = "<group>"; };
+		F993F09A1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjTimeShoppingTableViewCell.xib; sourceTree = "<group>"; };
+		F993F09D1B3FFAAE009C3E9A /* ObjShopRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjShopRecommendViewController.h; sourceTree = "<group>"; };
+		F993F09E1B3FFAAE009C3E9A /* ObjShopRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjShopRecommendViewController.m; sourceTree = "<group>"; };
+		F993F09F1B3FFAAE009C3E9A /* ObjShopRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjShopRecommendViewController.xib; sourceTree = "<group>"; };
+		F993F0A21B3FFB4F009C3E9A /* ObjShopRecommendViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjShopRecommendViewCell.h; sourceTree = "<group>"; };
+		F993F0A31B3FFB4F009C3E9A /* ObjShopRecommendViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjShopRecommendViewCell.m; sourceTree = "<group>"; };
+		F993F0A41B3FFB4F009C3E9A /* ObjShopRecommendViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjShopRecommendViewCell.xib; sourceTree = "<group>"; };
 		F99DF2C41B2568D500DB1B75 /* YHENetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHENetworkAdapter.h; sourceTree = "<group>"; };
 		F99DF2C51B2568D500DB1B75 /* YHENetworkAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHENetworkAdapter.m; sourceTree = "<group>"; };
 		F99DF2C61B2568D500DB1B75 /* YHENetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHENetworkEngine.h; sourceTree = "<group>"; };
@@ -342,9 +367,12 @@
 				F97F0D8A1B25C56D005F3A62 /* ObjViewController.m */,
 				F97F0DB21B25DD78005F3A62 /* ObjNavigationViewController.h */,
 				F97F0DB31B25DD78005F3A62 /* ObjNavigationViewController.m */,
-				F96B59D81B3EE185000EA4AE /* ObjTabbarController.h */,
-				F96B59D91B3EE185000EA4AE /* ObjTabbarController.m */,
-				F96B59DA1B3EE185000EA4AE /* ObjTabbarController.xib */,
+				F96B59D81B3EE185000EA4AE /* ObjNormalTabbarController.h */,
+				F96B59D91B3EE185000EA4AE /* ObjNormalTabbarController.m */,
+				F96B59DA1B3EE185000EA4AE /* ObjNormalTabbarController.xib */,
+				F993F08D1B3FE2A0009C3E9A /* ObjStoreTabbarController.h */,
+				F993F08E1B3FE2A0009C3E9A /* ObjStoreTabbarController.m */,
+				F993F08F1B3FE2A0009C3E9A /* ObjStoreTabbarController.xib */,
 				F92232E61B25456A00653DB0 /* Images.xcassets */,
 				F93106FD1B26E39F006CB718 /* Masonry */,
 				F99DF38F1B259C4800DB1B75 /* pinyin */,
@@ -450,6 +478,18 @@
 				F96B598F1B3E574A000EA4AE /* ObjDiningOutTableViewCell.h */,
 				F96B59901B3E574A000EA4AE /* ObjDiningOutTableViewCell.m */,
 				F96B59911B3E574A000EA4AE /* ObjDiningOutTableViewCell.xib */,
+				F993F0931B3FF222009C3E9A /* ObjTimeShoppingViewController.h */,
+				F993F0941B3FF222009C3E9A /* ObjTimeShoppingViewController.m */,
+				F993F0951B3FF222009C3E9A /* ObjTimeShoppingViewController.xib */,
+				F993F0981B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.h */,
+				F993F0991B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.m */,
+				F993F09A1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.xib */,
+				F993F09D1B3FFAAE009C3E9A /* ObjShopRecommendViewController.h */,
+				F993F09E1B3FFAAE009C3E9A /* ObjShopRecommendViewController.m */,
+				F993F09F1B3FFAAE009C3E9A /* ObjShopRecommendViewController.xib */,
+				F993F0A21B3FFB4F009C3E9A /* ObjShopRecommendViewCell.h */,
+				F993F0A31B3FFB4F009C3E9A /* ObjShopRecommendViewCell.m */,
+				F993F0A41B3FFB4F009C3E9A /* ObjShopRecommendViewCell.xib */,
 			);
 			path = storeViews;
 			sourceTree = "<group>";
@@ -778,9 +818,12 @@
 				F96B813E1B28806100920E5E /* ObjMyOrderViewController.xib in Resources */,
 				F96B81341B286C6B00920E5E /* ObjCartViewController.xib in Resources */,
 				F96B81391B28790F00920E5E /* ObjUserSettingTableViewCell.xib in Resources */,
+				F993F09C1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.xib in Resources */,
+				F993F0A61B3FFB4F009C3E9A /* ObjShopRecommendViewCell.xib in Resources */,
 				F9269D011B29B7BF002D2036 /* ObjStoreCollectionViewController.xib in Resources */,
 				F96B59861B3E412E000EA4AE /* ObjDiningOutViewController.xib in Resources */,
 				F97F0D9F1B25C66B005F3A62 /* ObjRegisterViewController.xib in Resources */,
+				F993F0A11B3FFAAE009C3E9A /* ObjShopRecommendViewController.xib in Resources */,
 				F96B812F1B286C5900920E5E /* ObjStoresViewController.xib in Resources */,
 				F97F0DA51B25C6FE005F3A62 /* ObjUserSettingViewController.xib in Resources */,
 				F9269D101B29B980002D2036 /* ObjMyStoreViewController.xib in Resources */,
@@ -789,8 +832,10 @@
 				F9269D0B1B29B956002D2036 /* ObjMyDiscountViewController.xib in Resources */,
 				F96B59931B3E574A000EA4AE /* ObjDiningOutTableViewCell.xib in Resources */,
 				F97F0D901B25C5B6005F3A62 /* ObjLoginViewController.xib in Resources */,
+				F993F0911B3FE2A0009C3E9A /* ObjStoreTabbarController.xib in Resources */,
+				F993F0971B3FF222009C3E9A /* ObjTimeShoppingViewController.xib in Resources */,
 				F92232E71B25456A00653DB0 /* Images.xcassets in Resources */,
-				F96B59DC1B3EE185000EA4AE /* ObjTabbarController.xib in Resources */,
+				F96B59DC1B3EE185000EA4AE /* ObjNormalTabbarController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +858,7 @@
 				F99DF3761B2575CB00DB1B75 /* MKNetworkEngine.m in Sources */,
 				F931071C1B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F99DF3331B25696500DB1B75 /* AFHTTPRequestOperation.m in Sources */,
+				F993F0901B3FE2A0009C3E9A /* ObjStoreTabbarController.m in Sources */,
 				F99DF3441B25696500DB1B75 /* MBProgressHUD.m in Sources */,
 				F96B812E1B286C5900920E5E /* ObjStoresViewController.m in Sources */,
 				F96B81331B286C6B00920E5E /* ObjCartViewController.m in Sources */,
@@ -834,6 +880,7 @@
 				F931071B1B26E39F006CB718 /* NSArray+MASAdditions.m in Sources */,
 				F99DF3391B25696500DB1B75 /* AFURLRequestSerialization.m in Sources */,
 				F99DF3421B25696500DB1B75 /* UIRefreshControl+AFNetworking.m in Sources */,
+				F993F0961B3FF222009C3E9A /* ObjTimeShoppingViewController.m in Sources */,
 				F99DF33A1B25696500DB1B75 /* AFURLResponseSerialization.m in Sources */,
 				F99DF3701B2575CB00DB1B75 /* NSData+MKBase64.m in Sources */,
 				F99DF3491B256A2200DB1B75 /* YHNetworkUserAgent.m in Sources */,
@@ -860,6 +907,7 @@
 				F9269D001B29B7BF002D2036 /* ObjStoreCollectionViewController.m in Sources */,
 				F99DF3431B25696500DB1B75 /* UIWebView+AFNetworking.m in Sources */,
 				F97F0D8B1B25C56D005F3A62 /* ObjViewController.m in Sources */,
+				F993F09B1B3FF268009C3E9A /* ObjTimeShoppingTableViewCell.m in Sources */,
 				F931071D1B26E39F006CB718 /* View+MASAdditions.m in Sources */,
 				F92232DC1B25456A00653DB0 /* main.m in Sources */,
 				F99DF3801B25969000DB1B75 /* YHLogger.m in Sources */,
@@ -869,10 +917,12 @@
 				F9269D051B29B913002D2036 /* ObjMyPublishViewController.m in Sources */,
 				F99DF2C81B2568D500DB1B75 /* YHENetworkAdapter.m in Sources */,
 				F99DF3351B25696500DB1B75 /* AFHTTPSessionManager.m in Sources */,
-				F96B59DB1B3EE185000EA4AE /* ObjTabbarController.m in Sources */,
+				F96B59DB1B3EE185000EA4AE /* ObjNormalTabbarController.m in Sources */,
 				F96B598E1B3E4820000EA4AE /* ObjSegmentView.m in Sources */,
 				F99DF3741B2575CB00DB1B75 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				F9269D0F1B29B980002D2036 /* ObjMyStoreViewController.m in Sources */,
+				F993F0A01B3FFAAE009C3E9A /* ObjShopRecommendViewController.m in Sources */,
+				F993F0A51B3FFB4F009C3E9A /* ObjShopRecommendViewCell.m in Sources */,
 				F99DF33D1B25696500DB1B75 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F99DF38E1B2599E800DB1B75 /* YHAssistant.m in Sources */,
 				F96B59921B3E574A000EA4AE /* ObjDiningOutTableViewCell.m in Sources */,

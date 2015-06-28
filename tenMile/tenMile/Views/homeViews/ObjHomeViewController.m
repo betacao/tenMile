@@ -8,10 +8,12 @@
 
 #import "ObjHomeViewController.h"
 #import "ObjUserSettingViewController.h"
-#import "ObjTabbarController.h"
+#import "ObjNormalTabbarController.h"
 #import "ObjNavigationViewController.h"
+#import "ObjStoreTabbarController.h"
 
 @interface ObjHomeViewController ()<UISearchBarDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *homePage_titleImageView;
 @end
 
 @implementation ObjHomeViewController
@@ -59,7 +61,9 @@
     [searBar setBarStyle:UIBarStyleDefault];
     
     self.navigationItem.titleView = searBar;
-
+    
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapHeadImageView:)];
+    [self.homePage_titleImageView addGestureRecognizer:recognizer];
 
 }
 
@@ -79,14 +83,23 @@
 }
 
 - (void)gotoUserCenter{
-    ObjTabbarController *controller = [[ObjTabbarController alloc] initWithNibName:@"ObjTabbarController" bundle:nil];
+    ObjNormalTabbarController *controller = [[ObjNormalTabbarController alloc] initWithNibName:@"ObjTabbarController" bundle:nil];
     ObjViewController *rootController = [[ObjViewController alloc] init];
     [rootController addChildViewController:controller];
     [rootController.view addSubview:controller.view];
-//    controller.hidesBottomBarWhenPushed = YES;
     [self presentViewController:rootController animated:YES completion:nil];
 }
 - (void)changeCity{
+    
+}
+
+- (void)didTapHeadImageView:(UIGestureRecognizer *)g
+{
+    ObjStoreTabbarController *controller = [[ObjStoreTabbarController alloc] initWithNibName:@"ObjStoreTabbarController" bundle:nil];
+    ObjViewController *rootController = [[ObjViewController alloc] init];
+    [rootController addChildViewController:controller];
+    [rootController.view addSubview:controller.view];
+    [self presentViewController:rootController animated:YES completion:nil];
     
 }
 - (void)didReceiveMemoryWarning {

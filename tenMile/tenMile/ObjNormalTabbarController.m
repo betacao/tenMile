@@ -6,18 +6,18 @@
 //  Copyright (c) 2015年 changxicao. All rights reserved.
 //
 
-#import "ObjTabbarController.h"
+#import "ObjNormalTabbarController.h"
 #import "ObjHomeViewController.h"
 #import "ObjNavigationViewController.h"
 #import "ObjUserSettingViewController.h"
 #import "ObjStoresViewController.h"
 #import "ObjCartViewController.h"
 
-@interface ObjTabbarController ()<UINavigationControllerDelegate>
+@interface ObjNormalTabbarController ()<UINavigationControllerDelegate>
 
 @end
 
-@implementation ObjTabbarController
+@implementation ObjNormalTabbarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,11 +37,25 @@
     ObjNavigationViewController *nav3 = [[ObjNavigationViewController alloc] initWithRootViewController:settingViewController];
     nav3.delegate = self;
     
-    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"选购" image:[UIImage imageNamed:@"选购--常态"] selectedImage:[UIImage imageNamed:@"选购--常态"]];
     
-    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"购物车" image:[UIImage imageNamed:@"购物车--常态"] selectedImage:[UIImage imageNamed:@"购物车--常态"]];
+    UIImage *image = [UIImage imageNamed:@"选购--常态"];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *selectedImage = [UIImage imageNamed:@"选购--选中"];
+    selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"选购" image:image selectedImage:selectedImage];
     
-    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"个人信息" image:[UIImage imageNamed:@"个人中心-常态"] selectedImage:[UIImage imageNamed:@"个人中心-常态"]];
+    image = [UIImage imageNamed:@"购物车--常态"];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    selectedImage = [UIImage imageNamed:@"购物车--选中"];
+    selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"购物车" image:image selectedImage:selectedImage];
+    
+    image = [UIImage imageNamed:@"个人中心-常态"];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    selectedImage = [UIImage imageNamed:@"个人中心-选中"];
+    selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"个人信息" image:image selectedImage:selectedImage];
+    
     
 
     storesViewController.tabBarItem = item1;

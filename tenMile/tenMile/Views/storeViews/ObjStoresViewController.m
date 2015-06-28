@@ -8,6 +8,8 @@
 
 #import "ObjStoresViewController.h"
 #import "ObjDiningOutViewController.h"
+#import "ObjTimeShoppingViewController.h"
+#import "ObjShopRecommendViewController.h"
 
 @interface ObjStoresViewController ()<UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *storeScrollView;
@@ -119,6 +121,25 @@
 
 //其他服务
 - (IBAction)otherService:(UIButton *)sender {
+}
+
+//限时抢购的点击事件
+- (IBAction)timeShopping:(id)sender
+{
+    ObjTimeShoppingViewController *controller = [[ObjTimeShoppingViewController alloc] initWithNibName:@"ObjTimeShoppingViewController" bundle:nil];
+    if(controller){
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    
+}
+
+//名店推荐的点击事件
+- (IBAction)shopRecommend:(id)sender
+{
+    ObjShopRecommendViewController *controller = [[ObjShopRecommendViewController alloc] initWithNibName:@"ObjShopRecommendViewController" bundle:nil];
+    if(controller){
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
