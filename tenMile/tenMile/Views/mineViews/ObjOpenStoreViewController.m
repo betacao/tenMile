@@ -1,33 +1,28 @@
 //
-//  ObjMyStoreViewController.m
+//  ObjOpenStoreViewController.m
 //  tenMile
 //
-//  Created by changxicao on 15/6/11.
+//  Created by 邢亚鑫 on 15/6/29.
 //  Copyright (c) 2015年 changxicao. All rights reserved.
 //
 
-#import "ObjMyStoreViewController.h"
 #import "ObjOpenStoreViewController.h"
+#import "ObjBoardView.h"
 
-@interface ObjMyStoreViewController ()
+@interface ObjOpenStoreViewController ()
 
 @end
 
-@implementation ObjMyStoreViewController
+@implementation ObjOpenStoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的店铺";
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)openStore:(id)sender{
-    ObjOpenStoreViewController *controller = [[ObjOpenStoreViewController alloc] initWithNibName:@"ObjOpenStoreViewController" bundle:nil];
-    [self.navigationController pushViewController:controller animated:YES];
 }
 
 /*

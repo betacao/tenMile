@@ -32,6 +32,9 @@
                             <rect key="frame" x="24" y="283" width="275" height="34"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                             <state key="normal" title="我要开店" backgroundImage="圆角矩形-3"/>
+                            <connections>
+                                <action selector="openStore:" destination="-1" eventType="touchUpInside" id="a8j-7B-IhN"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCz-n2-F43">
                             <rect key="frame" x="0.0" y="371" width="320" height="69"/>

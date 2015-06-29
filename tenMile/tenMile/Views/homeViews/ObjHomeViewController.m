@@ -74,7 +74,7 @@
     
     CGSize textSize = [ruleStr boundingRectWithSize:CGSizeMake(300.f, CGFLOAT_MAX) options:NSStringDrawingTruncatesLastVisibleLine |NSStringDrawingUsesLineFragmentOrigin |NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
     
-    [self.ruleLab setFrame:CGRectMake(10, self.ruleLab.frame.origin.y, 300, textSize.height)];
+    [self.ruleLab setFrame:CGRectMake(10, self.ruleLab.frame.origin.y, 300, textSize.height+100)];
     [self.ruleLab setNumberOfLines:0];
     self.ruleLab.text = ruleStr;
     
