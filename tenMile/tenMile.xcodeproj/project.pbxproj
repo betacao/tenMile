@@ -36,6 +36,10 @@
 		F931071B1B26E39F006CB718 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F931070E1B26E39F006CB718 /* NSArray+MASAdditions.m */; };
 		F931071C1B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F93107111B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		F931071D1B26E39F006CB718 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F93107131B26E39F006CB718 /* View+MASAdditions.m */; };
+		F94A90BE1B416E2400D716EE /* ObjChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94A90BC1B416E2400D716EE /* ObjChooseViewController.m */; };
+		F94A90BF1B416E2400D716EE /* ObjChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F94A90BD1B416E2400D716EE /* ObjChooseViewController.xib */; };
+		F94A90C31B417FCC00D716EE /* ObjChooseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F94A90C11B417FCC00D716EE /* ObjChooseTableViewCell.m */; };
+		F94A90C41B417FCC00D716EE /* ObjChooseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F94A90C21B417FCC00D716EE /* ObjChooseTableViewCell.xib */; };
 		F96B59851B3E412E000EA4AE /* ObjDiningOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B59831B3E412E000EA4AE /* ObjDiningOutViewController.m */; };
 		F96B59861B3E412E000EA4AE /* ObjDiningOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B59841B3E412E000EA4AE /* ObjDiningOutViewController.xib */; };
 		F96B598E1B3E4820000EA4AE /* ObjSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F96B598D1B3E4820000EA4AE /* ObjSegmentView.m */; };
@@ -185,6 +189,12 @@
 		F93107121B26E39F006CB718 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		F93107131B26E39F006CB718 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		F93107141B26E39F006CB718 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F94A90BB1B416E2400D716EE /* ObjChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjChooseViewController.h; sourceTree = "<group>"; };
+		F94A90BC1B416E2400D716EE /* ObjChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjChooseViewController.m; sourceTree = "<group>"; };
+		F94A90BD1B416E2400D716EE /* ObjChooseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjChooseViewController.xib; sourceTree = "<group>"; };
+		F94A90C01B417FCC00D716EE /* ObjChooseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjChooseTableViewCell.h; sourceTree = "<group>"; };
+		F94A90C11B417FCC00D716EE /* ObjChooseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjChooseTableViewCell.m; sourceTree = "<group>"; };
+		F94A90C21B417FCC00D716EE /* ObjChooseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjChooseTableViewCell.xib; sourceTree = "<group>"; };
 		F96B59821B3E412E000EA4AE /* ObjDiningOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjDiningOutViewController.h; sourceTree = "<group>"; };
 		F96B59831B3E412E000EA4AE /* ObjDiningOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjDiningOutViewController.m; sourceTree = "<group>"; };
 		F96B59841B3E412E000EA4AE /* ObjDiningOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjDiningOutViewController.xib; sourceTree = "<group>"; };
@@ -510,6 +520,12 @@
 				F993F0A21B3FFB4F009C3E9A /* ObjShopRecommendViewCell.h */,
 				F993F0A31B3FFB4F009C3E9A /* ObjShopRecommendViewCell.m */,
 				F993F0A41B3FFB4F009C3E9A /* ObjShopRecommendViewCell.xib */,
+				F94A90BB1B416E2400D716EE /* ObjChooseViewController.h */,
+				F94A90BC1B416E2400D716EE /* ObjChooseViewController.m */,
+				F94A90BD1B416E2400D716EE /* ObjChooseViewController.xib */,
+				F94A90C01B417FCC00D716EE /* ObjChooseTableViewCell.h */,
+				F94A90C11B417FCC00D716EE /* ObjChooseTableViewCell.m */,
+				F94A90C21B417FCC00D716EE /* ObjChooseTableViewCell.xib */,
 			);
 			path = storeViews;
 			sourceTree = "<group>";
@@ -859,6 +875,7 @@
 				F97F0DA51B25C6FE005F3A62 /* ObjUserSettingViewController.xib in Resources */,
 				F9269D101B29B980002D2036 /* ObjMyStoreViewController.xib in Resources */,
 				F97F0D951B25C5F3005F3A62 /* ObjRestPasswordViewController.xib in Resources */,
+				F94A90BF1B416E2400D716EE /* ObjChooseViewController.xib in Resources */,
 				F97F0DB01B25CF34005F3A62 /* ObjHomeViewController.xib in Resources */,
 				283C82CF1B416D8100E49DEE /* ObjMyOrderCell.xib in Resources */,
 				F9269D0B1B29B956002D2036 /* ObjMyDiscountViewController.xib in Resources */,
@@ -866,6 +883,7 @@
 				F97F0D901B25C5B6005F3A62 /* ObjLoginViewController.xib in Resources */,
 				F993F0911B3FE2A0009C3E9A /* ObjStoreTabbarController.xib in Resources */,
 				F993F0971B3FF222009C3E9A /* ObjTimeShoppingViewController.xib in Resources */,
+				F94A90C41B417FCC00D716EE /* ObjChooseTableViewCell.xib in Resources */,
 				F92232E71B25456A00653DB0 /* Images.xcassets in Resources */,
 				F96B59DC1B3EE185000EA4AE /* ObjNormalTabbarController.xib in Resources */,
 			);
@@ -890,6 +908,7 @@
 				F99DF3761B2575CB00DB1B75 /* MKNetworkEngine.m in Sources */,
 				F931071C1B26E39F006CB718 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F99DF3331B25696500DB1B75 /* AFHTTPRequestOperation.m in Sources */,
+				F94A90C31B417FCC00D716EE /* ObjChooseTableViewCell.m in Sources */,
 				F993F0901B3FE2A0009C3E9A /* ObjStoreTabbarController.m in Sources */,
 				F99DF3441B25696500DB1B75 /* MBProgressHUD.m in Sources */,
 				F96B812E1B286C5900920E5E /* ObjStoresViewController.m in Sources */,
@@ -931,6 +950,7 @@
 				F97F0D9E1B25C66B005F3A62 /* ObjRegisterViewController.m in Sources */,
 				F97F0DAF1B25CF34005F3A62 /* ObjHomeViewController.m in Sources */,
 				F99DF3851B2597A200DB1B75 /* LoggerClient.m in Sources */,
+				F94A90BE1B416E2400D716EE /* ObjChooseViewController.m in Sources */,
 				F99DF38B1B25997000DB1B75 /* YHENetworkOperation.m in Sources */,
 				F99DF3781B2575CB00DB1B75 /* Reachability.m in Sources */,
 				F931071A1B26E39F006CB718 /* MASViewConstraint.m in Sources */,

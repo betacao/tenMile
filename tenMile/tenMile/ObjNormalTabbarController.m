@@ -10,7 +10,7 @@
 #import "ObjHomeViewController.h"
 #import "ObjNavigationViewController.h"
 #import "ObjUserSettingViewController.h"
-#import "ObjStoresViewController.h"
+#import "ObjChooseViewController.h"
 #import "ObjCartViewController.h"
 
 @interface ObjNormalTabbarController ()<UINavigationControllerDelegate>
@@ -23,7 +23,7 @@
     [super viewDidLoad];
 
     //商城
-    ObjStoresViewController *storesViewController = [[ObjStoresViewController alloc] initWithNibName:@"ObjStoresViewController" bundle:nil];
+    ObjChooseViewController *storesViewController = [[ObjChooseViewController alloc] initWithNibName:@"ObjChooseViewController" bundle:nil];
     ObjNavigationViewController *nav1 = [[ObjNavigationViewController alloc] initWithRootViewController:storesViewController];
     nav1.delegate = self;
     
@@ -63,7 +63,7 @@
     settingViewController.tabBarItem = item3;
     
     [self setViewControllers:@[nav1,nav2,nav3] animated:NO];
-
+    self.selectedViewController = nav3;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
